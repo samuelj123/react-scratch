@@ -1,13 +1,12 @@
 import { useEffect } from 'react';
 import './App.css';
-import ProjectArc from './components/ProjectArc/ProjectArc';
-import data from './services/data';
+import Dashboard from './components/Dashboard/Dashboard';
 
 function App() {
   useEffect(() => { document.title = "SOA Dashboard" })
   return (
     <>
-      <ProjectArc {...data} />
+      <Dashboard />
     </>
 
   );

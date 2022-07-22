@@ -1,0 +1,7 @@
+.fullbudget {
+    stroke: var(--blue);
+}
+
+.spent {
+    stroke: var(--orange);
+}

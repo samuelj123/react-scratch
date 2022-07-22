@@ -1,7 +1,7 @@
 import { useRef, useEffect } from 'react';
 import * as d3 from 'd3';
 import "./ProjectArc.css";
-import dt from '../../services/interfaces';
+import { dt } from '../../services/interfaces';
 
 const datatransform = (x: dt) => {
     let total = x.ending + x.running + x.proposed;

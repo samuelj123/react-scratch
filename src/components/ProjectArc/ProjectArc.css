@@ -1,7 +1,3 @@
-svg {
-    border: 3px solid red;
-}
-
 svg g path {
     width: 100%;
     height: 100%;
@@ -12,7 +8,7 @@ svg g .ending {
 }
 
 svg g .running {
-    fill: var(--green);
+    fill: var(--blue);
 }
 
 svg g .proposed {
