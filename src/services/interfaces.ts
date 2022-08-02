@@ -10,3 +10,13 @@ export interface budgetdt {
     "fullbudget": number;
     "width": number;
 }
+
+export interface pcdata {
+    "width": number;
+    "data": simpledata[];
+}
+
+export interface simpledata {
+    "label": string;
+    "value": number;
+}
