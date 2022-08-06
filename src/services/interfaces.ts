@@ -3,6 +3,7 @@ export interface dt {
     "running": number;
     "proposed": number;
     "width": number;
+    "text": string;
 }
 
 export interface budgetdt {

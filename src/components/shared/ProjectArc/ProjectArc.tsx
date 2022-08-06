@@ -19,9 +19,9 @@ const datatransform = (x: dt) => {
     }
 }
 
-const ProjectArc = ({ ending, running, proposed, width }: dt) => {
+const ProjectArc = ({ ending, running, proposed, width, text }: dt) => {
     const d3Container = useRef(null);
-    const data = datatransform({ ending, running, proposed, width });
+    const data = datatransform({ ending, running, proposed, width, text });
     useEffect(
         () => {
             if (d3Container.current) {
@@ -56,6 +56,13 @@ const ProjectArc = ({ ending, running, proposed, width }: dt) => {
                 group.append('path')
                     .attr('class', 'proposed')
                     .attr('d', proposed)
+                group.append('text')
+                    .text(text)
+                    .attr("class", "text")
+                    .attr('text-anchor', 'middle')
+                    .attr('transform','scale('+width/50+')')
+                    .attr('y', -width/100)
+                    .attr('y', width/50)
             }
         }
     )
