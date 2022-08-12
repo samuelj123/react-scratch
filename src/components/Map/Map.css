@@ -4,9 +4,7 @@ svg.map {
 
 svg.map path {
     stroke-width: 1px;
-    stroke-dasharray: 5, 5;
-    stroke: var(--orange);
-    fill: none;
+    stroke: var(--white);
 }
 
 .mappath {
